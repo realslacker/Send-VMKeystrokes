@@ -51,4 +51,4 @@ $VM |
 ```
 
 ## Credit
-Significant inspiration for this module came from code created by [William Lam](https://www.virtuallyghetto.com)) and [David Rodriguez](https://www.sysadmintutorials.com). The primary code source I pulled from is [VMKeystrokes.ps1](https://github.com/lamw/vmware-scripts/blob/master/powershell/VMKeystrokes.ps1). Significant changes in both how this module handles input as well as how it's processed has been made.
+Significant inspiration for this module came from code created by [William Lam](https://www.virtuallyghetto.com) and [David Rodriguez](https://www.sysadmintutorials.com). The primary code source I pulled from is [VMKeystrokes.ps1](https://github.com/lamw/vmware-scripts/blob/master/powershell/VMKeystrokes.ps1). Significant changes in both how this module handles input as well as how it's processed has been made.

@@ -17,9 +17,12 @@ The characters "!", "+", "^", and "#" have special meanings. By prefixing any of
 |     #     | META (Windows/Apple Key) |
 
 Some examples:
-* ^c sends Ctrl + C
-* ^!{DELETE} sends Ctrl + Alt + Delete
-* !{F4} sends Alt + F4
+
+|   Example  | Sends Keys              |
+| ---------- | ----------------------- |
+|     ^c     |  Ctrl + C               |
+| ^!{DELETE} |  Ctrl + Alt + Delete    |
+|    !{F4}   |  Alt + F4               |
 
 ## Special Characters
 There are a number of keys on your keyboard that don't have a direct ASCII representation, to send those keys we use a HID map file.

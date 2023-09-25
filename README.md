@@ -26,7 +26,7 @@ Some examples:
 
 ## Special Characters
 There are a number of keys on your keyboard that don't have a direct ASCII representation, to send those keys we use a HID map file.
-You can view that file, and see a list of available special keys [here](src\Send-VMKeystrokes\data\HIDMap.psd1). Special characters
+You can view that file, and see a list of available special keys [here](src/Send-VMKeystrokes/data/HIDMap.psd1). Special characters
 should be enclosed in curly braces (i.e. DELETE should be {DELETE} in your string).
 
 ## Escaping Characters

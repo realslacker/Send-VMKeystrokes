@@ -17,13 +17,16 @@ The characters "!", "+", "^", and "#" have special meanings. By prefixing any of
 |     #     | META (Windows/Apple Key) |
 
 Some examples:
-* ^c sends Ctrl + C
-* ^!{DELETE} sends Ctrl + Alt + Delete
-* !{F4} sends Alt + F4
+
+|   Example  | Sends Keys              |
+| ---------- | ----------------------- |
+|     ^c     |  Ctrl + C               |
+| ^!{DELETE} |  Ctrl + Alt + Delete    |
+|    !{F4}   |  Alt + F4               |
 
 ## Special Characters
 There are a number of keys on your keyboard that don't have a direct ASCII representation, to send those keys we use a HID map file.
-You can view that file, and see a list of available special keys [here](src\Send-VMKeystrokes\data\HIDMap.psd1). Special characters
+You can view that file, and see a list of available special keys [here](src/Send-VMKeystrokes/data/HIDMap.psd1). Special characters
 should be enclosed in curly braces (i.e. DELETE should be {DELETE} in your string).
 
 ## Escaping Characters
@@ -51,4 +54,4 @@ $VM |
 ```
 
 ## Credit
-Significant inspiration for this module came from code created by [William Lam](https://www.virtuallyghetto.com)) and [David Rodriguez](https://www.sysadmintutorials.com). The primary code source I pulled from is [VMKeystrokes.ps1](https://github.com/lamw/vmware-scripts/blob/master/powershell/VMKeystrokes.ps1). Significant changes in both how this module handles input as well as how it's processed has been made.
+Significant inspiration for this module came from code created by [William Lam](https://www.virtuallyghetto.com) and [David Rodriguez](https://www.sysadmintutorials.com). The primary code source I pulled from is [VMKeystrokes.ps1](https://github.com/lamw/vmware-scripts/blob/master/powershell/VMKeystrokes.ps1). Significant changes in both how this module handles input as well as how it's processed has been made.

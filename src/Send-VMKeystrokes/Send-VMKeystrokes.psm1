@@ -321,10 +321,7 @@ function Send-VMKeystrokes {
     PassThru the VMware virtual machine object on the pipeline
     #>
     [CmdletBinding( DefaultParameterSetName='Default' )]
-    [OutputType( [VMware.VimAutomation.ViCore.Types.V1.Inventory.VirtualMachine], ParameterSetName='PassThru' )]
-    [OutputType( [VMware.VimAutomation.ViCore.Types.V1.Inventory.VirtualMachine], ParameterSetName='PauseAfterSeconds_PassThru' )]
-    [OutputType( [VMware.VimAutomation.ViCore.Types.V1.Inventory.VirtualMachine], ParameterSetName='PauseAfterMilliseconds_PassThru' )]
-    [OutputType( [VMware.VimAutomation.ViCore.Types.V1.Inventory.VirtualMachine], ParameterSetName='PauseAfterDuration_PassThru' )]
+    [OutputType( [VMware.VimAutomation.ViCore.Types.V1.Inventory.VirtualMachine] )]
     param(
 
         [Parameter( Mandatory, Position = 0 )]
@@ -343,17 +340,14 @@ function Send-VMKeystrokes {
         $KeyPressDelay,
 
         [Parameter( Mandatory, ParameterSetName='PauseAfterSeconds' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterSeconds_PassThru' )]
         [System.Nullable[uint]]
         $PauseAfterSeconds,
 
         [Parameter( Mandatory, ParameterSetName='PauseAfterMilliseconds' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterMilliseconds_PassThru' )]
         [System.Nullable[uint]]
         $PauseAfterMilliseconds,
 
         [Parameter( Mandatory, ParameterSetName='PauseAfterDuration' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterDuration_PassThru' )]
         [timespan]
         $PauseAfterDuration,
 
@@ -363,10 +357,6 @@ function Send-VMKeystrokes {
         [switch]
         $Verbatim,
 
-        [Parameter( Mandatory, ParameterSetName='PassThru' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterSeconds_PassThru' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterMilliseconds_PassThru' )]
-        [Parameter( Mandatory, ParameterSetName='PauseAfterDuration_PassThru' )]
         [switch]
         $PassThru
 

@@ -12,7 +12,7 @@
 RootModule = 'Send-VMKeystrokes.psm1'
 
 # Version number of this module.
-ModuleVersion = '23.9.22.1708'
+ModuleVersion = '23.9.26.1046'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
